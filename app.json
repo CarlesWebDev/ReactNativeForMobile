@@ -1,8 +1,9 @@
 {
   "expo": {
+    // sesuaikan dengan projek kalian(nama perojek)
     "name": "NewReactNative",
     "slug": "NewReactNative",
-    "scheme": "NewReactNative",
+    "scheme":"NewReactNative",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
