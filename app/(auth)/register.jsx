@@ -37,7 +37,7 @@ const Register = () => {
     const success = await register(email, password);
     if (success) {
       Alert.alert("Akun Berhasil Dibuat", "Silakan Kembali Kehalaman Login");
-    //   router.push("(auth)/login");
+      // router.push("(auth)/login");
     } else {
       Alert.alert("Gagal", error || "Register Gagal");
     }
@@ -46,7 +46,7 @@ const Register = () => {
     return (
       <SafeAreaView className="flex-1 bg-[#1a1a1d]">
         <View className="justify-center flex-1 px-6">
-          <Text className="mb-8 flex-row text-3xl font-extrabold text-center text-white">
+          <Text className="flex-row mb-8 text-3xl font-extrabold text-center text-white">
             {" "}
             Create Your Account
             <MaterialCommunityIcons
@@ -92,9 +92,9 @@ const Register = () => {
               onPress={handleRegister}
               disabled={loading}
               secureTextEntry
-              className=" w-full justify-center items-center bg-blue-600 px-6 py-3 rounded-xl active:bg-blue-700"
+              className="items-center justify-center w-full px-6 py-3 bg-blue-600 rounded-xl active:bg-blue-700"
             >
-              <Text className="text-white text-lg font-bold">
+              <Text className="text-lg font-bold text-white">
                 {loading ? "Mendaftar...." : "Daftar"}
               </Text>
             </Pressable>
