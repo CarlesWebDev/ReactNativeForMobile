@@ -15,7 +15,11 @@ const Register = () => {
 
     let newErrors = {};
 
-    if(!email) newErrors.email = "email Wajib Disi"
+   if (!email) {
+      newErrors.email = "Email wajib diisi";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Format email tidak valid";
+    }
     
     if(!password) {
         newErrors.password = "password Wajib Disi";
